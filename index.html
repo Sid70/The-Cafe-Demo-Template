@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafe Template</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body style="background-color:rgb(249, 246, 246);">
+
+    <!-- Navbar start -->
+
+    <nav class="my-navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#where">WHERE</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Background Part-->
+    <div style="position: relative; z-index: -1;" id="home">
+
+        <img src="img/bg.jpg" width="100%" height="600px">
+
+        <div class="heading">
+            <p class="brand">the<br>Cafe</p>
+        </div>
+
+        <div class="time">
+            <p class="brand"><span class="bg">Open from 6am to 5pm</span></p>
+        </div>
+
+        <div class="address">
+            <p class="brand">15 Adr street, 5015</p>
+        </div>
+
+
+    </div>
+
+    <div class="about col" id="about">
+        <div class="title">
+            <h4 class="badge">ABOUT THE CAFE</h4>
+        </div>
+
+        <div class="paragraph">
+            <p>
+                The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p style="padding-top:15px ;">
+                In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+                sandwiches, as well as a selection of sides and salads and other good stuff.
+            </p>
+        </div>
+
+        <div class="quote">
+            <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new
+                    sweet.</i></p>
+
+            <p style="padding-top:15px;"><i>Chef, Coffeeist and Owner: Liam Brown</i></p>
+        </div>
+
+        <div class="about-img">
+            <img src="img/a_img.jpg" alt="" width="100%">
+        </div>
+
+        <div class="location">
+            <address>
+                <strong>Operning hours:</strong> everyday from 6am to 5pm.<br>
+
+                <strong>Address: </strong>15 Adr street, 5015, NY
+            </address>
+        </div>
+    </div>
+
+    <!-- Menu -->
+
+    <div class="about col" id="menu">
+        <div class="title">
+            <h4 class="badge">THE MENU</h4>
+        </div>
+    </div>
+
+    <div class="about col box">
+        <div class="btn box">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');">
+                <div class="tablink dark-grey">Eat</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                <div class="tablink">Drink</div>
+            </a>
+        </div>
+
+        <div id="Eat" class="menu" style="display: block;">
+            <h5>Bread Basket</h5>
+            <p class="text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+            <h5>Belgian Waffle</h5>
+            <p class="text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+            <h5>Scrambled eggs</h5>
+            <p class="text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+            <h5>Blueberry Pancakes</h5>
+            <p class="text-grey">With syrup, butter and lots of berries 8.50</p>
+        </div>
+
+        <div id="Drinks" class="menu" style="display: none;">
+            <h5>Coffee</h5>
+            <p class="text-grey">Regular coffee 2.50</p><br>
+
+            <h5>Chocolato</h5>
+            <p class="text-grey">Chocolate espresso with milk 4.50</p><br>
+
+            <h5>Corretto</h5>
+            <p class="text-grey">Whiskey and coffee 5.00</p><br>
+
+            <h5>Iced tea</h5>
+            <p class="text-grey">Hot tea, except not hot 3.00</p><br>
+
+            <h5>Soda</h5>
+            <p class="text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+        </div>
+    </div>
+
+    <div class="about col">
+        <img src="img/menu_2.jpg" width="100%" class="m-img">
+    </div>
+
+
+    <!-- ---------------------------  where ----------------- -->
+
+    <div class="about col" id="where">
+        <div class="title">
+            <h4 class="badge">WHERE TO FIND US</h4>
+        </div>
+
+        <div class="paragraph text">
+            <p>Find us at some address at some place.</p>
+        </div>
+
+        <img src="img/map.jpg" width="100%" class="m-img">
+
+        <div class="paragraph space">
+            <p><span class="badge">FYI!</span>&nbsp;We offer full-service catering for any event, large or small. We
+                understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
+                and taste.</p>
+            <p class="space"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+        </div>
+
+        <form action="#">
+            <input type="text" name="name" placeholder="Name">
+            <input type="number" name="no_of_people" placeholder="How many people">
+            <input type="datetime-local" name="datelocal">
+            <input type="text" name="message" placeholder="Message \ Special Requirement ">
+            <input type="submit" value="SEND MESSAGE">
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        Powered By <u>Siddhanta</u>
+    </footer>
+
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+
+            // evt = "click" & menuName = "Eat" or "Drink"
+
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu"); //x is an object 
+            //x.length = 2
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            } //at this time both onject are at display:none (or not visible)
+
+            //tablinks.length = 2
+
+            tablinks = document.getElementsByClassName("tablink");
+            // tablinks[0].className : "tablinks dark-grey" 
+            // tablinks[1].className : "tablinks"
+
+            //x.length = 2
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+            } // at this time :  tablinks[0].className : "tablinks" & tablinks[1].className : "tablinks"
+
+            document.getElementById(menuName).style.display = "block";
+            //when i press on eat then ( menuName ="Eat" ) so the drink part is not visible
+            evt.currentTarget.firstElementChild.className += " dark-grey";
+        }
+    </script>
+
+</body>
+
+</html>
